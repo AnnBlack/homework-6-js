@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script src="index.js"></script>
+  <script src="character.js"></script>
+  <script src="hero.js"></script>
+  <script src="monster.js"></script>
+  <script src="game.js"></script>
+  
+
+  <script>
+var firstHero = new Hero(heroes);
+var firstMonster = new Monster(monsters);
+
+var secondHero = new Hero(heroes);
+var secondMonster = new Monster(monsters);
+
+var firstGame = new Game(firstHero, firstMonster);
+console.log(firstGame);
+
+var secondGame = new Game(secondHero, secondMonster);
+console.log(secondGame);
+
+  </script>
+</body>
+</html>
